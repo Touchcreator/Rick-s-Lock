@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Rick's Lock",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "exclude_matches": ["*://*.google.com/*", "*://*.bing.com/*", "https://shattereddisk.github.io/rickroll/rickroll.mp4"],
+            "js": ["script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
